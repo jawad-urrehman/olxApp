@@ -1,0 +1,42 @@
+<div class="panel panel-default">
+        <div><h2>User Registration</h2></div>
+         <div class="panel-body">
+         <form class="form-horizontal" (submit)="adduser()">
+         <div class="form-group">
+           <label for="emp_name" class="col-sm-2 control-label">Enter Name : </label>
+           <div class="col-sm-9">
+             <input type="text" class="form-control" [(ngModel)]="usr.UserName" name="UserName" >
+           </div>
+         </div>
+         
+         <div class="form-group">
+           <label for="department" class="col-sm-2 control-label">Enter Phone </label>
+           <div class="col-sm-9">
+             <input type="textarea" class="form-control" [(ngModel)]="usr.phone" name="phone">
+           </div>
+         </div>
+         <div class="form-group">
+           <label for="salary" class="col-sm-2 control-label">Enter Email </label>
+           <div class="col-sm-9">
+             <input type="text" class="form-control" [(ngModel)]="usr.email" name="email">
+           </div>
+         </div>
+         
+         <div class="form-group">
+                <label for="salary" class="col-sm-2 control-label">Enter Password </label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" [(ngModel)]="usr.password" name="password">
+                </div>
+              </div>         
+     
+     
+         <div class="form-group">
+           <div class="col-sm-offset-2 col-sm-8">
+             <button type="submit" class="btn btn-success">Register</button>
+           </div>
+          
+         </div>
+       </form>
+       
+         </div>
+       </div>

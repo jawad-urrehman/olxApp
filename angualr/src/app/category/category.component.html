@@ -1,0 +1,19 @@
+<div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12" *ngFor="let itm of itms" >
+                <div class="card" style="width: 20rem;">
+                    <img src="http://localhost:3000/{{itm.image}}" class="card-img-top img-fluid" alt="..." style="height: 150px;">
+                    <div class="card-body">
+                      <h5 class="card-title">{{itm.name}}</h5>
+                      <p class="card-text">{{itm.address}}</p>
+                      <h3>RS {{itm.price}}</h3>
+                      <a href="#" class="btn btn-primary" routerLink="/show/{{itm._id}}">Details</a>
+                    </div>
+            </div>
+            <br>
+        </div>
+        
+    
+        </div>
+    
+    </div>

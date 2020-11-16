@@ -1,0 +1,46 @@
+
+<div class="container">
+        <div class="row">
+
+            <div class="col-lg-8 col-md-6 col-12">
+
+                <img src="http://localhost:3000/{{itm?.image}}" alt=""  class="img-fluid" >
+
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <br>
+                <br>
+                <div class="alert alert-secondary" role="alert">
+                       <h3> Items Details </h3>
+                </div>
+                <h3>RS {{itm?.price}}</h3>
+                <h4>{{itm?.address}}</h4>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="alert alert-secondary" role="alert">
+                                <h3> Seller Details </h3>
+                </div>
+                
+                <h3>{{Usr?.UserName}}</h3>
+                <h3>{{Usr?.phone}}</h3>
+                
+            </div>
+        </div>
+        <br>
+        <br>
+        <div>
+                        <div class="alert alert-secondary col-lg-4" role="alert">
+                                        <h3> Description </h3>
+                        </div> 
+            <p>{{itm?.discription}}</p>
+        </div>
+        <br>
+        <br>
+        <div>
+                <button class="btn btn-primary" (click)="gotoHome()">Cancel</button>
+            </div>
+        
+  </div>
